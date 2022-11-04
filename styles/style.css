@@ -7,12 +7,11 @@ body{
     margin: 0%;
 }
 
-.global{ 
+.main{ 
     display: flex;
+    border-radius: 30px
 }
-li{
-    margin-bottom: 10px;
-}
+
 h1{
     color: black;
     text-align: center;
@@ -31,7 +30,7 @@ h2{
     border-width: 25px;
     margin: 2%;
     background-color: white;
-    
+    display: block;
 }
 .container__picture__text{
     font-size: 20px;
@@ -41,10 +40,23 @@ h2{
     margin-bottom: 10px;
     color: gray;
 }
+li{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 h4{
     text-align: center;
 }
-h5{
+h5{               
     text-align: center;
     color: blue;
+}
+@media(max-width: 768px){
+    img {
+        width: 100%;
+    }
+    container__picture__text{
+        width: 100%;
+    }
 }
